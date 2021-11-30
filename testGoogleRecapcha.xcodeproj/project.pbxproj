@@ -13,6 +13,10 @@
 		0D79C5202756B03B0081993A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D79C51E2756B03B0081993A /* Main.storyboard */; };
 		0D79C5222756B03E0081993A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D79C5212756B03E0081993A /* Assets.xcassets */; };
 		0D79C5252756B03E0081993A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D79C5232756B03E0081993A /* LaunchScreen.storyboard */; };
+		0D79C52D2756B1360081993A /* ReCAPTCHAViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D79C52C2756B1360081993A /* ReCAPTCHAViewModel.swift */; };
+		0D79C52F2756B16F0081993A /* ReCAPTCHAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D79C52E2756B16F0081993A /* ReCAPTCHAViewController.swift */; };
+		0D79C5312756B7370081993A /* recaptcha.html in Resources */ = {isa = PBXBuildFile; fileRef = 0D79C5302756B7370081993A /* recaptcha.html */; };
+		0D79C5332756C5240081993A /* recaptchaV3.html in Resources */ = {isa = PBXBuildFile; fileRef = 0D79C5322756C5240081993A /* recaptchaV3.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		0D79C5212756B03E0081993A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D79C5242756B03E0081993A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D79C5262756B03E0081993A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D79C52C2756B1360081993A /* ReCAPTCHAViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReCAPTCHAViewModel.swift; sourceTree = "<group>"; };
+		0D79C52E2756B16F0081993A /* ReCAPTCHAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReCAPTCHAViewController.swift; sourceTree = "<group>"; };
+		0D79C5302756B7370081993A /* recaptcha.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = recaptcha.html; sourceTree = "<group>"; };
+		0D79C5322756C5240081993A /* recaptchaV3.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = recaptchaV3.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +67,10 @@
 				0D79C5182756B03B0081993A /* AppDelegate.swift */,
 				0D79C51A2756B03B0081993A /* SceneDelegate.swift */,
 				0D79C51C2756B03B0081993A /* ViewController.swift */,
+				0D79C5302756B7370081993A /* recaptcha.html */,
+				0D79C5322756C5240081993A /* recaptchaV3.html */,
+				0D79C52E2756B16F0081993A /* ReCAPTCHAViewController.swift */,
+				0D79C52C2756B1360081993A /* ReCAPTCHAViewModel.swift */,
 				0D79C51E2756B03B0081993A /* Main.storyboard */,
 				0D79C5212756B03E0081993A /* Assets.xcassets */,
 				0D79C5232756B03E0081993A /* LaunchScreen.storyboard */,
@@ -124,7 +136,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D79C5312756B7370081993A /* recaptcha.html in Resources */,
 				0D79C5252756B03E0081993A /* LaunchScreen.storyboard in Resources */,
+				0D79C5332756C5240081993A /* recaptchaV3.html in Resources */,
 				0D79C5222756B03E0081993A /* Assets.xcassets in Resources */,
 				0D79C5202756B03B0081993A /* Main.storyboard in Resources */,
 			);
@@ -139,7 +153,9 @@
 			files = (
 				0D79C51D2756B03B0081993A /* ViewController.swift in Sources */,
 				0D79C5192756B03B0081993A /* AppDelegate.swift in Sources */,
+				0D79C52D2756B1360081993A /* ReCAPTCHAViewModel.swift in Sources */,
 				0D79C51B2756B03B0081993A /* SceneDelegate.swift in Sources */,
+				0D79C52F2756B16F0081993A /* ReCAPTCHAViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
