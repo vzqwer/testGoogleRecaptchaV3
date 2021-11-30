@@ -10,20 +10,11 @@ import WebKit
 
 class ViewController: UIViewController {
 
-    private var button: UIButton = {
-        let btn = UIButton()
-        btn.setTitle("Show recapcha VC", for: .normal)
-        btn.setTitleColor(.blue, for: .normal)
-        btn.addTarget(self, action: #selector(showRecapchaVC), for: .touchUpInside)
-        btn.translatesAutoresizingMaskIntoConstraints = false
-        return btn
-    }()
-
-
     private let webConfiguration = WKWebViewConfiguration()
     private let contentController = WKUserContentController()
     private lazy var webView: WKWebView = {
         let webView = WKWebView(frame: .zero, configuration: webConfiguration)
+        webView.isHidden = true
         return webView
     }()
 
@@ -39,23 +30,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        view.addSubview(webView)
+
         reCAPTCHAViewModel.delegate = self
         contentController.add(reCAPTCHAViewModel, name: "recaptcha")
         webConfiguration.userContentController = contentController
 
-        view.addSubview(button)
-        NSLayoutConstraint.activate([
-            button.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-            button.centerXAnchor.constraint(equalTo: view.centerXAnchor)
-        ])
-    }
-
-    @objc private func showRecapchaVC() {
-        let vc = ReCAPTCHAViewController(viewModel: reCAPTCHAViewModel)
-        vc.title = "ReCAPTCHAViewController"
-
-        let nav = UINavigationController(rootViewController: vc)
-        present(nav, animated: true)
+        webView.loadHTMLString(reCAPTCHAViewModel.html, baseURL: reCAPTCHAViewModel.url)
     }
 }
 
